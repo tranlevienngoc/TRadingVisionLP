@@ -18,12 +18,19 @@
   </head>
   <body>
     <div id="particles-js"></div> 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+     <img src="./images/arrow-up.svg" alt="" class="icon">
+    </button>
     <section id="top-section">
       <nav class="navbar navbar-expand-lg" id="nav">
         <div class="container-fluid">
           <div class="d-flex justify-content-center d-lg-none w-100">
             <a class="navbar-brand" href="#"
-              ><img src="images/logo.svg" alt="" srcset="" /> TradingVision</a
+              >
+              <!-- <img src="images/logo.svg" alt="" srcset="" /> TradingVision -->
+              <img src="images/logo.svg" alt="" srcset="" /> 
+
+              </a
             >
             <img
               src="images/menu.svg"
@@ -43,82 +50,83 @@
             <span class="close-icon" onclick="closeNav()"></span>
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#our-products" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link" href="#our-products" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Overview
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li class="nav-item"> <a class="nav-link" href="#about-us" data-link="about-us">About Us</a> </li>
-                  <li class="nav-item"> <a class="nav-link" href="#token-details" data-link="token-details">Token</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="#process" data-link="process">Roadmap</a> </li>
-                  <li class="nav-item"><a class="nav-link" href="#our-investors" data-link="our-investors">Partners</a> </li>
-                  <li class="nav-item"><a class="nav-link" href="#team-members" data-link="team-members">Team</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="#about-us" data-link="about-us"><img src="./images/aboutUs-icon.svg" alt="" class="icon">About Us</a> </li>
+                  <li class="nav-item"> <a class="nav-link" href="#process" data-link="process"><img src="./images/roadmap-icon.svg" alt="" class="icon">Roadmap</a> </li>
+                  <li class="nav-item"> <a class="nav-link" href="#token-details" data-link="token-details"><img src="./images/token-icon.svg" alt="" class="icon">Token</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#our-investors" data-link="our-investors"><img src="./images/partners-icon.svg" alt="" class="icon">Partners</a> </li>
+                  <li class="nav-item"><a class="nav-link" href="#team-members" data-link="team-members"><img src="./images/team-icon.svg" alt="" class="icon">Team</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#our-products" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link" href="#our-products" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Company
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#"><img src="./images/on-chain-analytics-icon.svg" alt="" class="icon"> Mission</a></li>
-                  <li><a class="dropdown-item" href="#"><img src="./images/defi-insights-icon.svg" alt="" class="icon"> Careers</a></li>
-                  <li><a class="dropdown-item" href="#"><img src="./images/dex-explorer-icon.svg" alt="" class="icon"> Brand Assets</a></li>
-                  <li><a class="dropdown-item" href="#"><img src="./images/dex-explorer-icon.svg" alt="" class="icon"> Insights</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="./images/mission-icon.svg" alt="" class="icon"> Mission</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="./images/careers-icon.svg" alt="" class="icon"> Careers</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="./images/brand-assets-icon.svg" alt="" class="icon"> Brand Assets</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="./images/insights-icon.svg" alt="" class="icon"> Insights</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#our-products" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link" href="#our-products" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Products
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#"><img src="./images/on-chain-analytics-icon.svg" alt="" class="icon"> On-chain Data</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="./images/on-chain-data-icon.svg" alt="" class="icon"> On-chain Data</a></li>
                   <li><a class="dropdown-item" href="#"><img src="./images/price-predictions-icon.svg" alt="" class="icon"> Price Predictions</a></li>
-                  <li><a class="dropdown-item" href="#"><img src="./images/trading-signals-icon.svg" alt="" class="icon"> Market Analysis</a></li>
-                  <li><a class="dropdown-item" href="#"><img src="./images/trading-signals-icon.svg" alt="" class="icon"> Whale Tracker</a></li>
-                  <li><a class="dropdown-item" href="#"><img src="./images/defi-insights-icon.svg" alt="" class="icon"> Fundraising Tracker</a></li> 
+                  <li><a class="dropdown-item" href="#"><img src="./images/market-analysis-icon.svg" alt="" class="icon"> Market Analysis</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="./images/whale-tracker-icon.svg" alt="" class="icon"> Whale Tracker</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="./images/fundraising-tracker-icon.svg" alt="" class="icon"> Fundraising Tracker</a></li> 
                   <li><a class="dropdown-item" href="#"><img src="./images/dex-explorer-icon.svg" alt="" class="icon"> DEX Explorer</a></li>
-                  <li><a class="dropdown-item" href="#"><img src="./images/project-predictions-icon.svg" alt="" class="icon"> More products</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="./images/more-products-icon.svg" alt="" class="icon"> More products</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#our-products" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link" href="#our-products" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Solutions
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#"><img src="./images/on-chain-analytics-icon.svg" alt="" class="icon">User Alerts</a></li>
-                  <li><a class="dropdown-item" href="#"><img src="./images/defi-insights-icon.svg" alt="" class="icon">Widget Stream</a></li>
-                  <li><a class="dropdown-item" href="#"><img src="./images/dex-explorer-icon.svg" alt="" class="icon">Developer APIs</a></li>
-                  <li><a class="dropdown-item" href="#"><img src="./images/price-predictions-icon.svg" alt="" class="icon">Integrations</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="./images/user-alerts-icon.svg" alt="" class="icon">User Alerts</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="./images/widget-stream-icon.svg" alt="" class="icon">Widget Stream</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="./images/developer-APIs-icon.svg" alt="" class="icon">Developer APIs</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="./images/integrations-icon.svg" alt="" class="icon">Integrations</a></li>
                 </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#process" data-link="process">Pricing</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#our-products" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link" href="#our-products" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Developers
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#"><img src="./images/on-chain-analytics-icon.svg" alt="" class="icon"> Documentation</a></li>
-                  <li><a class="dropdown-item" href="#"><img src="./images/defi-insights-icon.svg" alt="" class="icon"> GitHub</a></li>
-                  <li><a class="dropdown-item" href="#"><img src="./images/dex-explorer-icon.svg" alt="" class="icon"> Status</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="./images/documentation-icon.svg" alt="" class="icon"> Documentation</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="./images/gitHub-icon.svg" alt="" class="icon"> GitHub</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="./images/status-icon.svg" alt="" class="icon"> Status</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#our-products" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link" href="#our-products" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Community
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#"><img src="./images/on-chain-analytics-icon.svg" alt="" class="icon"> Twitter</a></li>
-                  <li><a class="dropdown-item" href="#"><img src="./images/defi-insights-icon.svg" alt="" class="icon"> Discord</a></li>
-                  <li><a class="dropdown-item" href="#"><img src="./images/dex-explorer-icon.svg" alt="" class="icon"> Telegram</a></li>
-                  <li><a class="dropdown-item" href="#"><img src="./images/dex-explorer-icon.svg" alt="" class="icon"> Youtube</a></li>
-                  <li><a class="dropdown-item" href="#"><img src="./images/dex-explorer-icon.svg" alt="" class="icon"> Facebook</a></li>
-                  <li><a class="dropdown-item" href="#"><img src="./images/dex-explorer-icon.svg" alt="" class="icon"> Medium</a></li>
-                  <li><a class="dropdown-item" href="#"><img src="./images/dex-explorer-icon.svg" alt="" class="icon"> Linkedin</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="./images/twitter-icon.svg" alt="" class="icon"> Twitter</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="./images/discord-icon.svg" alt="" class="icon"> Discord</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="./images/telegram-icon.svg" alt="" class="icon"> Telegram</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="./images/youtube-icon.svg" alt="" class="icon"> Youtube</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="./images/facebook-icon.svg" alt="" class="icon"> Facebook</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="./images/medium-icon.svg" alt="" class="icon"> Medium</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="./images/linkedin-icon.svg" alt="" class="icon"> Linkedin</a></li>
                 </ul>
               </li>
             </ul>
             <form class="d-flex white-paper">
+              <button class="btn btn-login" type="submit">Login</button>
               <button class="btn btn-white-paper" type="submit">Launch App</button>
             </form>
           </div>
@@ -316,7 +324,7 @@
             <p class="description">Give the ability to embed charts and graphs onto any website.</p>
           </div>
           <div class="item" data-aos="slide-up">
-            <img class="feature-img" src="images/project-predictions.svg" alt="" />
+            <img class="feature-img" src="images/developer-APIs.svg" alt="" />
             <h5 class="title">Developer APIs</h5>
             <p class="description">Any developer can build and publish open APIs easily and quickly.</p>
           </div>
@@ -546,7 +554,7 @@
             <div class="timeline-article content-right-container" data-aos="fade-up">
               <div class="meta-date"></div>
               <div class="content-box">
-                <div class="date">Q3<br/>2021</div>
+                <div class="date">JUL 2<span class="d-lg-none">/</span><br class="d-none"/>2021</div>
                 <div class="content">
                   <p class="title">Stage 1&nbsp;&nbsp;-&nbsp;&nbsp;Foundation</p>
                   <p>
@@ -560,23 +568,24 @@
             <div class="timeline-article content-left-container" data-aos="fade-up">
               <div class="meta-date"></div>
               <div class="content-box">
-                <div class="date">Q4<br/>2021</div>
-                <div class="content">
+                <div class="date d-block d-lg-none">JUL 2<span class="d-lg-none">/</span><br class="d-none"/>2021</div>
+                <div class="content content-right" >
                   <p class="title">Stage 2&nbsp;&nbsp;-&nbsp;&nbsp;Building</p>
                   <p>
                     Design and prototype.
                     Build a data system.
                     Machine learning models training.
                     Build the core product.
-
+                    
                   </p>
                 </div>
+                   <div class="date d-none d-lg-block">JUL 2<span class="d-lg-none">/</span><br class="d-none"/>2021</div>
               </div>
             </div>
             <div class="timeline-article content-right-container" data-aos="fade-up">
               <div class="meta-date"></div>
               <div class="content-box">
-                <div class="date">Q1<br/>2022</div>
+                   <div class="date">JUL 2<span class="d-lg-none">/</span><br class="d-none"/>2021</div>
                 <div class="content">
                   <p class="title">Stage 3&nbsp;&nbsp;-&nbsp;&nbsp;Trading Vision Beta</p>
                   <p>
@@ -590,26 +599,25 @@
             <div class="timeline-article content-left-container" data-aos="fade-up">
               <div class="meta-date"></div>
               <div class="content-box">
-                <div class="date">Q2<br/>2022</div>
-                <div class="content">
+                <div class="date d-block d-lg-none">JUL 2<span class="d-lg-none">/</span><br class="d-none"/>2021</div>
+                <div class="content content-right">
                   <p class="title">Stage 4&nbsp;&nbsp;-&nbsp;&nbsp;Trading Vision Alpha</p>
                   <p>
-                   Release Version 1 of the product.
+                    Release Version 1 of the product.
                     Launch new features.
                     Upgrade the database system.
                     Integrate the payment gateway with cryptocurrencies.
                     Grow the community base to acquire more active users.
-
-
                   </p>
                 </div>
+                <div class="date d-none d-lg-block">JUL 2<span class="d-lg-none">/</span><br class="d-none"/>2021</div>
               </div>
             </div>
-          </div>
-          <div class="timeline-article content-right-container" data-aos="fade-up">
+
+            <div class="timeline-article content-right-container" data-aos="fade-up">
               <div class="meta-date"></div>
               <div class="content-box">
-                <div class="date">Q3<br/>2022</div>
+                <div class="date">JUL 2<span class="d-lg-none">/</span><br class="d-none"/>2021</div>
                 <div class="content">
                   <p class="title">Stage 5&nbsp;&nbsp;-&nbsp;&nbsp;Scaling</p>
                   <p>
@@ -627,7 +635,7 @@
             <div class="timeline-article content-left-container" data-aos="fade-up">
               <div class="meta-date"></div>
               <div class="content-box">
-                <div class="date">Q4<br/>2022</div>
+                <div class="date d-block d-lg-none">JUL 2<span class="d-lg-none">/</span><br class="d-none"/>2021</div>
                 <div class="content">
                   <p class="title">Stage 6&nbsp;&nbsp;-&nbsp;&nbsp;Governance</p>
                   <p>
@@ -637,8 +645,10 @@
 
                   </p>
                 </div>
+                <div class="date d-none d-lg-block">JUL 2<span class="d-lg-none">/</span><br class="d-none"/>2021</div>
               </div>
             </div>
+          </div>
           </div>
           </div>
         </div>
@@ -754,21 +764,25 @@
         <div class="row-lg section-content d-lg-flex d-none" data-aos="fade-up">
           <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
             <img src="https://i.imgur.com/0o9dYaN.png" alt="" class="img rounded-circle member-img" />
+            <a href="#" target="_blank"><span class="linkedin"></span></a>
             <p class="member-name">Lam Tran</p>
             <p class="position">Founder & CEO</p>
           </div>
           <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
             <img src="https://i.imgur.com/XOzpm3x.jpg" alt="" class="img rounded-circle member-img" />
+            <a href="#" target="_blank"><span class="linkedin"></span></a>
             <p class="member-name">Cuong Nguyen</p>
             <p class="position">Co-founder & CTO</p>
           </div>
           <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
             <img src="https://i.imgur.com/hvf6dAe.png" alt="" class="img rounded-circle member-img" />
+            <a href="#" target="_blank"><span class="linkedin"></span></a>
             <p class="member-name">Phong Cao</p>
             <p class="position">Data Scientist Lead</p>
           </div>
           <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
             <img src="https://i.imgur.com/PklvJT2.png" alt="" class="img rounded-circle member-img" />
+            <a href="#" target="_blank"><span class="linkedin"></span></a>
             <p class="member-name">Thang Nguyen</p>
             <p class="position">AI Engineer Lead</p>
           </div>
@@ -776,21 +790,25 @@
         <div class="row-lg section-content d-lg-flex d-none" data-aos="fade-up">
           <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
             <img src="https://i.imgur.com/Ze7EWCX.png" alt="" class="img rounded-circle member-img" />
+            <a href="#" target="_blank"><span class="linkedin"></span></a>
             <p class="member-name">Huy Vo</p>
             <p class="position">Data Analyst</p>
           </div>
           <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
             <img src="https://i.imgur.com/w3aZxM5.png" alt="" class="img rounded-circle member-img" />
+            <a href="#" target="_blank"><span class="linkedin"></span></a>
             <p class="member-name">Cong Le</p>
             <p class="position">Data Analyst</p>
           </div>
           <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
             <img src="https://i.imgur.com/lagFYte.jpg" alt="" class="img rounded-circle member-img" />
+            <a href="#" target="_blank"><span class="linkedin"></span></a>
             <p class="member-name">Jack Nguyen</p>
             <p class="position">Software Engineer</p>
           </div>
           <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
             <img src="https://i.imgur.com/vLNksrc.jpg" alt="" class="img rounded-circle member-img" />
+            <a href="#" target="_blank"><span class="linkedin"></span></a>
             <p class="member-name">Manh Nguyen</p>
             <p class="position">Blockchain Developer</p>
           </div>
@@ -800,21 +818,25 @@
           
           <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
             <img src="https://i.imgur.com/7ftR7SK.png" alt="" class="img rounded-circle member-img" />
+            <a href="#" target="_blank"><span class="linkedin"></span></a>
             <p class="member-name">Son Nguyen</p>
             <p class="position">UX/UI Designer</p>
           </div>
           <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
             <img src="https://i.imgur.com/m3fA4GP.png" alt="" class="img rounded-circle member-img" />
+            <a href="#" target="_blank"><span class="linkedin"></span></a>
             <p class="member-name">Phung Nguyen</p>
             <p class="position">Software Developer</p>
           </div>
           <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
             <img src="https://i.imgur.com/vCPWfaX.png" alt="" class="img rounded-circle member-img" />
+            <a href="#" target="_blank"><span class="linkedin"></span></a>
             <p class="member-name">Khoa Dang</p>
             <p class="position">Software Developer</p>
           </div> 
           <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
             <img src="https://i.imgur.com/c0DgRIr.png" alt="" class="img rounded-circle member-img" />
+            <a href="#" target="_blank"><span class="linkedin"></span></a>
             <p class="member-name">Nhat Vo</p>
             <p class="position">Software Developer</p>
           </div>
@@ -822,21 +844,25 @@
         <div class="row-lg section-content d-lg-flex d-none" data-aos="fade-up">
           <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
             <img src="https://i.imgur.com/MTbEeT3.png" alt="" class="img rounded-circle member-img" />
+            <a href="#" target="_blank"><span class="linkedin"></span></a>
             <p class="member-name">Cuong Nguyen</p>
             <p class="position">Head of Marketing</p>
           </div>
           <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
             <img src="https://i.imgur.com/xrT6bLf.jpg" alt="" class="img rounded-circle member-img" />
+            <a href="#" target="_blank"><span class="linkedin"></span></a>
             <p class="member-name">Dao Mai</p>
             <p class="position">Digital Marketing</p>
           </div>
           <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
             <img src="https://i.imgur.com/4ovqpwp.png" alt="" class="img rounded-circle member-img" />
+            <a href="#" target="_blank"><span class="linkedin"></span></a>
             <p class="member-name">Martin Nguyen</p>
             <p class="position">Community Manager</p>
           </div>
           <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
             <img src="https://i.imgur.com/MEFs0dn.png" alt="" class="img rounded-circle member-img" />
+            <a href="#" target="_blank"><span class="linkedin"></span></a>
             <p class="member-name">Kiyos</p>
             <p class="position">Community Manager</p>
           </div>
