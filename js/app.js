@@ -70,7 +70,7 @@ function closeNav() {
 
 const navLinks = document.querySelectorAll(".nav-item");
 navLinks.forEach((l) => {
-  if (window.innerWidth < 1292 && !l.classList.contains("dropdown")) {
+  if (window.innerWidth < 992 && !l.classList.contains("dropdown")) {
     l.addEventListener("click", () => {
       $(".collapse").removeClass("show");
       $(".collapse").addClass("closing");
@@ -114,3 +114,62 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+// Themes begin
+am4core.useTheme(am4themes_animated);
+// Themes end
+
+// Create chart instance
+var chart = am4core.create("chartdiv", am4charts.PieChart);
+
+// Add and configure Series
+var pieSeries = chart.series.push(new am4charts.PieSeries());
+pieSeries.dataFields.value = "litres";
+pieSeries.dataFields.category = "country";
+pieSeries.dataFields.color = "color";
+
+// Let's cut a hole in our Pie chart the size of 30% the radius
+chart.innerRadius = am4core.percent(30);
+
+pieSeries.alignLabels = false;
+pieSeries.labels.template.bent = true;
+pieSeries.labels.template.radius = 3;
+pieSeries.labels.template.padding(0, 0, 0, 0);
+pieSeries.labels.disabled = true;
+pieSeries.ticks.template.disabled = true;
+pieSeries.labels.template.disabled = true;
+// Create a base filter effect (as if it's not there) for the hover to return to
+var shadow = pieSeries.slices.template.filters.push(
+  new am4core.DropShadowFilter()
+);
+shadow.opacity = 0;
+
+// Create hover state
+var hoverState = pieSeries.slices.template.states.getKey("hover"); // normally we have to create the hover state, in this case it already exists
+
+// Slightly shift the shadow and make it more prominent on hover
+var hoverShadow = hoverState.filters.push(new am4core.DropShadowFilter());
+hoverShadow.opacity = 0.7;
+hoverShadow.blur = 5;
+
+// Add a legend
+chart.legend = new am4charts.Legend();
+chart.legend.position = "right";
+chart.legend.markers.template.children.getIndex(0).cornerRadius(30, 30, 30, 30);
+chart.legend.labels.template.textAlign = "start";
+chart.legend.labels.template.width = 300;
+// chart.legend.labels.template.events.on("parentset", function (event) {
+//   event.target.toBack();
+// });
+chart.legend.labels.template.text = "[white]{name}";
+chart.logo.disabled = true;
+chart.data = [
+  { country: "Team", litres: 18, color: "red" },
+  { country: "Advisors", litres: 2, color: "red" },
+  { country: "Seed Round", litres: 5, color: "red" },
+  { country: "Strategic Sale", litres: 15, color: "red" },
+  { country: "Ecosystem Growth", litres: 20, color: "red" },
+  { country: "Community Development", litres: 20, color: "red" },
+  { country: "Liquidity Incentives", litres: 5, color: "red" },
+  { country: "Foundation Reserves", litres: 15, color: "red" },
+];

@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
   </head>
   <body>
     <div id="particles-js"></div> 
@@ -29,7 +33,6 @@
               >
               <!-- <img src="images/logo.svg" alt="" srcset="" /> TradingVision -->
               <img src="images/logo.svg" alt="" srcset="" /> 
-
               </a
             >
             <img
@@ -44,11 +47,11 @@
             />
           </div>
           <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-            <a class="navbar-brand d-block d-lg-block" href="#"
-              ><img src="images/logo.svg" alt="" srcset="" height="100px" /> </a
+            <a class="navbar-brand" href="#"
+              ><img src="images/logo.svg" alt="" srcset="" height="60px" /> </a
             >
             <span class="close-icon" onclick="closeNav()"></span>
-            <ul class="navbar-nav mb-2 mb-lg-0">
+            <!-- <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item dropdown">
                 <a class="nav-link" href="#our-products" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Overview
@@ -124,7 +127,7 @@
                   <li><a class="dropdown-item" href="#"><img src="./images/linkedin-icon.svg" alt="" class="icon"> Linkedin</a></li>
                 </ul>
               </li>
-            </ul>
+            </ul> -->
             <form class="d-flex white-paper">
               <button class="btn btn-login" type="submit">Login</button>
               <button class="btn btn-white-paper" type="submit">Launch App</button>
@@ -446,8 +449,9 @@
             </div>
           </div>
           <div class="col-12 col-lg-6 chart" data-aos="fade-up">
-            <img src="images/token-distribution.svg" alt="" class="d-none d-lg-block" />
-            <img src="images/chart-mobile.svg" alt="" class="d-block d-lg-none" />
+            <!-- <img src="images/token-distribution.svg" alt="" class="d-none d-lg-block" />
+            <img src="images/chart-mobile.svg" alt="" class="d-block d-lg-none" /> -->
+            <div id="chartdiv"></div>
           </div>
         </div>
       </section>
@@ -636,7 +640,7 @@
               <div class="meta-date"></div>
               <div class="content-box">
                 <div class="date d-block d-lg-none">JUL 2<span class="d-lg-none">/</span><br class="d-none"/>2021</div>
-                <div class="content">
+                <div class="content content-right">
                   <p class="title">Stage 6&nbsp;&nbsp;-&nbsp;&nbsp;Governance</p>
                   <p>
                     Release DAO.
@@ -688,7 +692,7 @@
                     data-bs-slide-to="1"
                     aria-label="Slide 2"
                   ></button>
-                  <button
+                  <!-- <button
                     type="button"
                     data-bs-target="#carouselExampleIndicators3"
                     data-bs-slide-to="2"
@@ -699,7 +703,7 @@
                     data-bs-target="#carouselExampleIndicators3"
                     data-bs-slide-to="3"
                     aria-label="Slide 4"
-                  ></button>
+                  ></button> -->
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -726,7 +730,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-item">
+                  <!-- <div class="carousel-item">
                     <div class="d-flex justify-content-around">
                       <div class="item d-flex flex-column align-items-center">
                         <img src="images/investor-logo.svg" alt="" />
@@ -737,8 +741,8 @@
                         <p class="investor-name">DTC Capital</p>
                       </div>
                     </div>
-                  </div>
-                  <div class="carousel-item">
+                  </div> -->
+                  <!-- <div class="carousel-item">
                     <div class="d-flex justify-content-around">
                       <div class="item d-flex flex-column align-items-center">
                         <img src="images/investor-logo.svg" alt="" />
@@ -749,7 +753,7 @@
                         <p class="investor-name">DTC Capital</p>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -897,38 +901,211 @@
                 data-bs-slide-to="3"
                 aria-label="Slide 4"
               ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators4"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators4"
+                data-bs-slide-to="5"
+                aria-label="Slide 6"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators4"
+                data-bs-slide-to="6"
+                aria-label="Slide 7"
+               ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators4"
+                data-bs-slide-to="7"
+                aria-label="Slide 8"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators4"
+                data-bs-slide-to="8"
+                aria-label="Slide 9"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators4"
+                data-bs-slide-to="9"
+                aria-label="Slide 10"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators4"
+                data-bs-slide-to="10"
+                aria-label="Slide 11"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators4"
+                data-bs-slide-to="11"
+                aria-label="Slide 12"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators4"
+                data-bs-slide-to="12"
+                aria-label="Slide 13"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators4"
+                data-bs-slide-to="13"
+                aria-label="Slide 14"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators4"
+                data-bs-slide-to="14"
+                aria-label="Slide 15"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators4"
+                data-bs-slide-to="15"
+                aria-label="Slide 16"
+              ></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
-                  <img src="https://i.imgur.com/f8KmJsR.jpg" alt="" class="img rounded-circle member-img" />
+                  <img src="https://i.imgur.com/0o9dYaN.png" alt="" class="img rounded-circle member-img" />
+                  <a href="#" target="_blank"><span class="linkedin"></span></a>
                   <p class="member-name">Lam Tran</p>
-                  <p class="position">CEO</p>
+                  <p class="position">Founder & CEO</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
-                  <img src="images/ben.png" alt="" class="img rounded-circle member-img" />
-                  <p class="member-name">Ben Whitby</p>
-                  <p class="position">CFO</p>
+                  <img src="https://i.imgur.com/XOzpm3x.jpg" alt="" class="img rounded-circle member-img" />
+                  <a href="#" target="_blank"><span class="linkedin"></span></a>
+                  <p class="member-name">Cuong Nguyen</p>
+                  <p class="position">Co-founder & CTO</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
-                  <img src="images/josh.png" alt="" class="img rounded-circle member-img" />
-                  <p class="member-name">Josh Goodbody</p>
-                  <p class="position">Marketing Head</p>
+                  <img src="https://i.imgur.com/hvf6dAe.png" alt="" class="img rounded-circle member-img" />
+                  <a href="#" target="_blank"><span class="linkedin"></span></a>
+                  <p class="member-name">Phong Cao</p>
+                  <p class="position">Data Scientist Lead</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
-                  <img src="images/jenifar.png" alt="" class="img rounded-circle member-img" />
-                  <p class="member-name">Jenifar Lorany</p>
-                  <p class="position">Lead Designer</p>
+                  <img src="https://i.imgur.com/PklvJT2.png" alt="" class="img rounded-circle member-img" />
+                  <a href="#" target="_blank"><span class="linkedin"></span></a>
+                  <p class="member-name">Thang Nguyen</p>
+                  <p class="position">AI Engineer Lead</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
+                  <img src="https://i.imgur.com/Ze7EWCX.png" alt="" class="img rounded-circle member-img" />
+                  <a href="#" target="_blank"><span class="linkedin"></span></a>
+                  <p class="member-name">Huy Vo</p>
+                  <p class="position">Data Analyst</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
+                  <img src="https://i.imgur.com/w3aZxM5.png" alt="" class="img rounded-circle member-img" />
+                  <a href="#" target="_blank"><span class="linkedin"></span></a>
+                  <p class="member-name">Cong Le</p>
+                  <p class="position">Data Analyst</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
+                  <img src="https://i.imgur.com/lagFYte.jpg" alt="" class="img rounded-circle member-img" />
+                  <a href="#" target="_blank"><span class="linkedin"></span></a>
+                  <p class="member-name">Jack Nguyen</p>
+                  <p class="position">Software Engineer</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
+                  <img src="https://i.imgur.com/vLNksrc.jpg" alt="" class="img rounded-circle member-img" />
+                  <a href="#" target="_blank"><span class="linkedin"></span></a>
+                  <p class="member-name">Manh Nguyen</p>
+                  <p class="position">Blockchain Developer</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
+                  <img src="https://i.imgur.com/7ftR7SK.png" alt="" class="img rounded-circle member-img" />
+                  <a href="#" target="_blank"><span class="linkedin"></span></a>
+                  <p class="member-name">Son Nguyen</p>
+                  <p class="position">UX/UI Designer</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
+                  <img src="https://i.imgur.com/m3fA4GP.png" alt="" class="img rounded-circle member-img" />
+                  <a href="#" target="_blank"><span class="linkedin"></span></a>
+                  <p class="member-name">Phung Nguyen</p>
+                  <p class="position">Software Developer</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
+                  <img src="https://i.imgur.com/vCPWfaX.png" alt="" class="img rounded-circle member-img" />
+                  <a href="#" target="_blank"><span class="linkedin"></span></a>
+                  <p class="member-name">Khoa Dang</p>
+                  <p class="position">Software Developer</p>
+                </div> 
+              </div>
+              <div class="carousel-item">
+                <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
+                  <img src="https://i.imgur.com/c0DgRIr.png" alt="" class="img rounded-circle member-img" />
+                  <a href="#" target="_blank"><span class="linkedin"></span></a>
+                  <p class="member-name">Nhat Vo</p>
+                  <p class="position">Software Developer</p>
+                </div>
+              </div> 
+              <div class="carousel-item">
+                <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
+                  <img src="https://i.imgur.com/MTbEeT3.png" alt="" class="img rounded-circle member-img" />
+                  <a href="#" target="_blank"><span class="linkedin"></span></a>
+                  <p class="member-name">Cuong Nguyen</p>
+                  <p class="position">Head of Marketing</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
+                  <img src="https://i.imgur.com/xrT6bLf.jpg" alt="" class="img rounded-circle member-img" />
+                  <a href="#" target="_blank"><span class="linkedin"></span></a>
+                  <p class="member-name">Dao Mai</p>
+                  <p class="position">Digital Marketing</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
+                  <img src="https://i.imgur.com/4ovqpwp.png" alt="" class="img rounded-circle member-img" />
+                  <a href="#" target="_blank"><span class="linkedin"></span></a>
+                  <p class="member-name">Martin Nguyen</p>
+                  <p class="position">Community Manager</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-lg-3 col-12 member d-flex flex-column align-items-center">
+                  <img src="https://i.imgur.com/MEFs0dn.png" alt="" class="img rounded-circle member-img" />
+                  <a href="#" target="_blank"><span class="linkedin"></span></a>
+                  <p class="member-name">Kiyos</p>
+                  <p class="position">Community Manager</p>
                 </div>
               </div>
             </div>
           </div>
+         
         </div>
       </section>
       <section id="advisors">
@@ -972,18 +1149,6 @@
                 data-bs-slide-to="2"
                 aria-label="Slide 3"
               ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators5"
-                data-bs-slide-to="3"
-                aria-label="Slide 4"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators5"
-                data-bs-slide-to="4"
-                aria-label="Slide 5"
-              ></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -996,18 +1161,6 @@
                 <div class="advisor d-flex flex-column align-items-center">
                   <img src="images/ben.png" alt="" class="img rounded-circle advisor-img" />
                   <p class="advisor-name">Ben Whitby</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="advisor d-flex flex-column align-items-center">
-                  <img src="images/josh.png" alt="" class="img rounded-circle advisor-img" />
-                  <p class="advisor-name">Josh Goodbody</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="advisor d-flex flex-column align-items-center">
-                  <img src="images/jenifar.png" alt="" class="img rounded-circle advisor-img" />
-                  <p class="advisor-name">Jenifar Lorany</p>
                 </div>
               </div>
               <div class="carousel-item">

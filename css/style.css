@@ -136,7 +136,7 @@ body {
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 780px;
-  /* height: 687px; */
+  height: 687px;
   margin-top: calc(calc(100vh - 200px) / 2);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -317,8 +317,7 @@ body {
 }
 
 #about-us {
-  /* abc */
-  /* margin-top: -200px; */
+  margin-top: -200px;
   margin-bottom: 150px;
 }
 
@@ -427,6 +426,23 @@ body {
   width: 1050px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media (min-width: 992px) {
+  #our-products .section-content .our-products-items {
+    width: 870px;
+  }
+  #our-products .section-content .our-products-items:nth-child(2) {
+    width: 960px !important;
+  }
+}
+@media (min-width: 1200px) {
+  #our-products .section-content .our-products-items {
+    width: 1050px;
+  }
+  #our-products .section-content .our-products-items:nth-child(2) {
+    width: 1120px !important;
+  }
 }
 
 #our-products .section-content .our-products-items:nth-child(2) {
@@ -590,8 +606,8 @@ body {
 @media (min-width: 721px) {
   #other-features .section-content .item,
   #benefits .section-content .item {
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
     /* margin-right: 10px; */
   }
 }
@@ -933,7 +949,7 @@ body {
 #process .timeline-article {
   width: 100%;
   position: relative;
-  margin: 40px 0px;
+  margin: 45px 0px;
   min-height: 135px;
   z-index: 0;
 }
@@ -1382,7 +1398,11 @@ footer .channels img {
     margin-top: 20px;
   }
 }
-
+@media (min-width: 500px) {
+  .container-fluid img {
+    height: 60px;
+  }
+}
 @media (max-width: 992px) {
   .navbar-collapse {
     background: #050221;
@@ -1400,7 +1420,7 @@ footer .channels img {
     transition-duration: 300ms;
   }
   .navbar-collapse .navbar-brand {
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
   }
   .navbar-collapse .dropdown-menu.show {
     background: transparent !important;
@@ -1453,7 +1473,7 @@ footer .channels img {
 #myBtn {
   display: none;
   position: fixed;
-  top: 100px;
+  bottom: 30px;
   right: 30px;
   z-index: 99;
   font-size: 18px;
@@ -1476,7 +1496,28 @@ footer .channels img {
   height: 65px;
   background: url("../images/linkedin.svg") center center no-repeat;
   background-size: 100%;
-  margin-top: -30px;
+  margin-top: -32px;
   position: relative;
   z-index: 3;
+}
+
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
+
+#chartdiv tspan {
+  fill: #403e3e;
+}
+
+@media (min-width: 992px) {
+  #process {
+    margin-top: 350px;
+  }
+}
+
+@media (min-width: 1400px) {
+  #process {
+    margin-top: 140px;
+  }
 }
