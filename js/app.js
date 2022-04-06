@@ -158,6 +158,9 @@ chart.legend.position = "right";
 chart.legend.markers.template.children.getIndex(0).cornerRadius(30, 30, 30, 30);
 chart.legend.labels.template.textAlign = "start";
 chart.legend.labels.template.width = 300;
+//new
+chart.legend.labels.template.size = 10;
+chart.legend.width = 330;
 // chart.legend.labels.template.events.on("parentset", function (event) {
 //   event.target.toBack();
 // });
@@ -173,3 +176,13 @@ chart.data = [
   { country: "Liquidity Incentives", litres: 5, color: "red" },
   { country: "Foundation Reserves", litres: 15, color: "red" },
 ];
+//new
+var w = window.innerWidth;
+function myFunction() {
+  w = window.innerWidth;
+  if (w < 800) {
+    chart.legend.position = "bottom";
+  } else {
+    chart.legend.position = "right";
+  }
+}

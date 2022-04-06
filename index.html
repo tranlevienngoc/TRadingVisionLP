@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/images/logo.svg" type="image/x-icon"/>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon"/>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <title>Trading Vision - All In One Crypto Assistant</title>
     <meta name="title" content="rading Vision - All In One Crypto Assistant" />
@@ -20,7 +20,7 @@
     <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
 
   </head>
-  <body>
+  <body onresize="myFunction()">
     <div id="particles-js"></div> 
     <button onclick="topFunction()" id="myBtn" title="Go to top">
      <img src="./images/arrow-up.svg" alt="" class="icon">
@@ -51,7 +51,7 @@
               ><img src="images/logo.svg" alt="" srcset="" height="60px" /> </a
             >
             <span class="close-icon" onclick="closeNav()"></span>
-            <!-- <ul class="navbar-nav mb-2 mb-lg-0">
+            <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item dropdown">
                 <a class="nav-link" href="#our-products" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Overview
@@ -127,7 +127,7 @@
                   <li><a class="dropdown-item" href="#"><img src="./images/linkedin-icon.svg" alt="" class="icon"> Linkedin</a></li>
                 </ul>
               </li>
-            </ul> -->
+            </ul>
             <form class="d-flex white-paper">
               <button class="btn btn-login" type="submit">Login</button>
               <button class="btn btn-white-paper" type="submit">Launch App</button>
@@ -665,8 +665,8 @@
               <span class="section-title" data-aos="fade-up">07. OUR PARTNERS </span>
               <h3 class="title" data-aos="fade-up">Partners</h3>
             </div>
-            <div class="section-content d-none d-lg-block">
-              <div class="d-flex justify-content-center">
+            <div class="section-content d-none d-lg-block" >
+              <div class="d-flex justify-content-center img-our-partners">
                 <div class="item d-flex flex-column align-items-center mx-3" data-aos="fade-up">
                   <img src="https://i.imgur.com/bgq99Fw.png" alt="" style="width:100%;max-width:230px;" />
                 </div>
@@ -1209,7 +1209,7 @@
       </section>
     </div>
     <footer>
-      <img src="images/logo.svg" alt="" class="logo"  data-aos="fade-up"/>
+      <img src="images/favicon.png" alt="" class="logo"  data-aos="fade-up"/>
       <div class="footer-nav" data-aos="fade-up">
         <ul>
           <li><a href="#">Home</a></li>

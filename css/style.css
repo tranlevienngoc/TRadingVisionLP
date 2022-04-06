@@ -1399,7 +1399,7 @@ footer .channels img {
   }
 }
 @media (min-width: 500px) {
-  .container-fluid img {
+  .container-fluid .navbar-brand img {
     height: 60px;
   }
 }
@@ -1520,4 +1520,8 @@ footer .channels img {
   #process {
     margin-top: 140px;
   }
+}
+
+.img-our-partners {
+  margin-top: 150px;
 }
