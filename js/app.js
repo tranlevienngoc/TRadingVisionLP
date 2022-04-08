@@ -69,8 +69,9 @@ function closeNav() {
 }
 
 const navLinks = document.querySelectorAll(".nav-item");
+console.log({ navLinks });
 navLinks.forEach((l) => {
-  if (window.innerWidth < 992 && !l.classList.contains("dropdown")) {
+  if (window.innerWidth < 1500 && !l.classList.contains("dropdown")) {
     l.addEventListener("click", () => {
       $(".collapse").removeClass("show");
       $(".collapse").addClass("closing");
@@ -180,7 +181,7 @@ chart.data = [
 var w = window.innerWidth;
 function myFunction() {
   w = window.innerWidth;
-  if (w < 800) {
+  if (w <= 500) {
     chart.legend.position = "bottom";
   } else {
     chart.legend.position = "right";
