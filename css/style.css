@@ -57,6 +57,10 @@ body {
   z-index: 9999;
 }
 
+.logo-trading {
+  height: 46px !important;
+}
+
 @media (min-width: 1200px) {
   #top-section #nav {
     padding: 30px 5px;
@@ -96,7 +100,7 @@ body {
 }
 @media (min-width: 1300px) {
   #top-section #nav {
-    padding: 30px 5px !important;
+    padding: 30px 5px;
     z-index: 9999 !important;
   }
   .logo-trading {
@@ -134,8 +138,11 @@ body {
 
 @media (min-width: 1620px) {
   #top-section #nav {
-    padding: 30px 50px !important;
-    z-index: 9999 !;
+    padding: 30px 50px;
+    z-index: 9999 !important;
+    /* position: fixed; */
+    /* top: 0px;
+    width: 100%; */
   }
   .logo-trading {
     height: 60px !important;
@@ -906,8 +913,8 @@ body {
   }
   #token-distribution .section-content .token-distribution-table {
     width: 100%;
-    padding: 0;
-    background: transparent;
+    padding: 10px;
+    background: #100c31;
     border-radius: none;
   }
   #token-distribution .section-content img {
@@ -1257,6 +1264,7 @@ body {
     rgba(18, 9, 103, 0.3) 23.96%,
     rgba(4, 0, 39, 0) 100%
   );
+  /* height: 330px; */
 }
 
 #our-investors .section-content {
@@ -1316,7 +1324,7 @@ body {
   background: -webkit-linear-gradient(0deg, #088af7, #1ab1e7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-top: 36px;
+  margin-top: 0px;
   margin-bottom: 0;
 }
 
@@ -1452,6 +1460,8 @@ body {
   z-index: 1000;
   height: 57px;
   display: block;
+  display: flex !important;
+  align-items: center !important;
 }
 
 @media (max-width: 992px) {
@@ -1667,7 +1677,8 @@ footer .channels img {
 }
 
 .img-our-partners {
-  margin-top: 150px;
+  margin-top: 80px;
+  height: 123px;
 }
 
 @media (min-width: 1200px) {
@@ -1682,7 +1693,7 @@ footer .channels img {
   position: absolute;
   width: 20px;
   height: 20px;
-  top: 60px;
+  top: 55px;
   right: 20px;
   z-index: 10000;
   display: none;
@@ -1692,8 +1703,33 @@ footer .channels img {
   .close-icon {
     display: block;
   }
+  .navbar-collapse ul {
+    margin-top: 26px;
+  }
+  .navbar-collapse ul li {
+    margin-bottom: 5px;
+  }
 }
 
 form {
   margin-block-end: 0 !important;
+}
+
+@media (max-width: 550px) {
+  .stage1 {
+    min-height: 260px !important;
+  }
+  .stage2 {
+    min-height: 220px !important;
+  }
+  .stage3 {
+    min-height: 230px !important;
+  }
+  .stage4,
+  .stage5 {
+    min-height: 340px !important;
+  }
+  .stage6 {
+    min-height: 280px !important;
+  }
 }
