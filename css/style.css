@@ -479,7 +479,7 @@ body {
 }
 
 #about-us {
-  margin-top: -200px;
+  margin-top: -300px;
   margin-bottom: 150px;
 }
 
@@ -847,11 +847,11 @@ body {
 }
 
 #token-distribution {
-  margin-top: 120px;
+  margin-top: 0px;
 }
 
 #token-distribution .section-content {
-  margin-top: 73px;
+  margin-top: 0px;
 }
 
 #token-distribution .section-content .token-distribution-table {

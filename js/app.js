@@ -96,7 +96,7 @@ $(document).mouseup(function (e) {
 });
 
 var mybutton = document.getElementById("myBtn");
-var myNav = document.getElementById("nav");
+// var myNav = document.getElementById("nav");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
@@ -109,13 +109,11 @@ function scrollFunction() {
     document.documentElement.scrollTop > 100
   ) {
     mybutton.style.display = "block";
-
     // myNav.style.background = "#6c757d";
     // myNav.style.padding = "10px 10px";
     // myNav.style.position = "fixed";
   } else {
     mybutton.style.display = "none";
-
     // myNav.style.background = "none";
     // myNav.style.padding = "30px 50px";
     // myNav.style.position = "relative";
@@ -215,8 +213,3 @@ function myFunction() {
     chart.legend.position = "right";
   }
 }
-
-// if ($("body").scrollTop() > $(".section-a").position.top) {
-//   $("#headnev").removeClass("topnavbar");
-//   $("#headnev").addClass("navbar-fixed-top");
-// }
