@@ -45,6 +45,13 @@ body {
   height: 1200px;
 }
 
+@media (max-width: 1440px) {
+  #top-section {
+    background-size: 50%;
+    height: auto;
+  }
+}
+
 @media (max-width: 992px) {
   #top-section {
     background-size: 50%;
@@ -1260,8 +1267,8 @@ body {
 #wrap-our-investors {
   margin-top: 150px;
   background: radial-gradient(
-    57.69% 57.69% at 50% 50%,
-    rgba(18, 9, 103, 0.3) 23.96%,
+    40% 57.69% at 50% 50%,
+    rgba(18, 9, 103, 0.26) 0%,
     rgba(4, 0, 39, 0) 100%
   );
 }
@@ -1734,4 +1741,8 @@ form {
   .stage6 {
     min-height: 280px !important;
   }
+}
+
+#chartdiv tspan {
+  fill: white;
 }

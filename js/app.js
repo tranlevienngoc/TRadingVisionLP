@@ -109,14 +109,8 @@ function scrollFunction() {
     document.documentElement.scrollTop > 100
   ) {
     mybutton.style.display = "block";
-    // myNav.style.background = "#6c757d";
-    // myNav.style.padding = "10px 10px";
-    // myNav.style.position = "fixed";
   } else {
     mybutton.style.display = "none";
-    // myNav.style.background = "none";
-    // myNav.style.padding = "30px 50px";
-    // myNav.style.position = "relative";
   }
 }
 
@@ -150,11 +144,12 @@ pieSeries.labels.disabled = true;
 pieSeries.ticks.template.disabled = true;
 pieSeries.labels.template.disabled = true;
 // tooltip
+
 pieSeries.slices.template.tooltipText =
   "{category}: {value.percent}.00% ({value}0M)";
 
-pieSeries.slices.template.propertyFields.fill = "color";
-
+// pieSeries.tooltip.getFillFromObject = false;
+// pieSeries.tooltip.color.fill = am4core.color("#CEB1BE");
 // Create a base filter effect (as if it's not there) for the hover to return to
 var shadow = pieSeries.slices.template.filters.push(
   new am4core.DropShadowFilter()
@@ -177,31 +172,29 @@ chart.legend.labels.template.textAlign = "start";
 chart.legend.labels.template.width = 300;
 //new
 chart.legend.labels.template.size = 10;
-chart.legend.width = 330;
+chart.legend.width = 240;
 // chart.legend.labels.template.events.on("parentset", function (event) {
 //   event.target.toBack();
 // });
 chart.legend.labels.template.text = "[white]{name}";
 chart.logo.disabled = true;
 chart.data = [
-  { country: "Team", litres: 18, color: am4core.color("#04aef7") },
-  { country: "Advisors", litres: 2, color: am4core.color("#089fe0") },
-  { country: "Strategic Sale", litres: 5, color: am4core.color("#0c90c9") },
-  { country: "Private Sale", litres: 8, color: am4core.color("#0c80b2") },
-  { country: "Public Sale", litres: 1, color: am4core.color("#096f9b") },
-  { country: "Ecosystem Growth", litres: 21, color: am4core.color("#14bae8") },
-  { country: "Staking Rewards", litres: 10, color: am4core.color("#14a6ce") },
+  { country: "Team", litres: 18 },
+  { country: "Advisors", litres: 2 },
+  { country: "Strategic Sale", litres: 5 },
+  { country: "Private Sale", litres: 8 },
+  { country: "Public Sale", litres: 1 },
+  { country: "Ecosystem Growth", litres: 21 },
+  { country: "Staking Rewards", litres: 10 },
   {
     country: "Community Development",
     litres: 20,
-    color: am4core.color("#1293b7"),
   },
   {
     country: "Liquidity Incentives",
     litres: 5,
-    color: am4core.color("#0d7c9b"),
   },
-  { country: "Treasury", litres: 10, color: am4core.color("#0e6d87") },
+  { country: "Treasury", litres: 10 },
 ];
 //new
 var w = window.innerWidth;
